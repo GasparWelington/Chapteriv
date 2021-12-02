@@ -35,6 +35,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with: 
         GITHUB-TOKEN: ${{ secrets.GITHUB_TOKEN}}
+        BASE_BRANCH: development #
         BRACH: gh-pages
         FOLDER: mochawesome-report
         
