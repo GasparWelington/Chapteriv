@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-03T00:21:35.650Z",
-    "end": "2021-12-03T00:21:38.010Z",
-    "duration": 2360,
+    "start": "2021-12-03T00:29:41.709Z",
+    "end": "2021-12-03T00:29:43.972Z",
+    "duration": 2263,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f7d5912b-cde2-4bc6-9f92-6c7b019b79d2",
+      "uuid": "7e0d7f16-5b31-41bf-a36e-32b5a6a7aa21",
       "title": "",
       "fullFile": "cypress/integration/listagem.spec.js",
       "file": "cypress/integration/listagem.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "63a8467c-f58b-4507-bd7d-512cb62cdc48",
+          "uuid": "f405f781-ab6c-4a0c-957b-7adc2b664dd9",
           "title": "Listagem",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando não houver cadastro, então a listagem devem estar vazia",
               "fullTitle": "Listagem Quando não houver cadastro, então a listagem devem estar vazia",
               "timedOut": null,
-              "duration": 137,
+              "duration": 98,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.fixture('listagem-vazia').then(data => {\n  window.localStorage.setItem('data', JSON.stringify(data));\n  cy.get('table tbody tr').should('have.length', 0);\n});",
               "err": {},
-              "uuid": "b8ff825d-71f7-4788-aef3-5a240db0d552",
-              "parentUUID": "63a8467c-f58b-4507-bd7d-512cb62cdc48",
+              "uuid": "08c918e4-7cb3-43f1-92ba-7568450a03d9",
+              "parentUUID": "f405f781-ab6c-4a0c-957b-7adc2b664dd9",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Quando houver um ou mais cadastro, então a listagem devem exibir cada registro",
               "fullTitle": "Listagem Quando houver um ou mais cadastro, então a listagem devem exibir cada registro",
               "timedOut": null,
-              "duration": 787,
+              "duration": 747,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.fixture('listagem-com-itens').then(data => {\n  window.localStorage.setItem('data', JSON.stringify(data));\n});\ncy.visit('https://form-agilizei.netlify.app/listagem.html');\ncy.get('table tbody tr').should('have.length', 1);",
               "err": {},
-              "uuid": "0b108678-957a-443a-9aac-6f435e21f60d",
-              "parentUUID": "63a8467c-f58b-4507-bd7d-512cb62cdc48",
+              "uuid": "50d8d2a7-92ef-43ad-9f41-dcb5327d6b3c",
+              "parentUUID": "f405f781-ab6c-4a0c-957b-7adc2b664dd9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b8ff825d-71f7-4788-aef3-5a240db0d552",
-            "0b108678-957a-443a-9aac-6f435e21f60d"
+            "08c918e4-7cb3-43f1-92ba-7568450a03d9",
+            "50d8d2a7-92ef-43ad-9f41-dcb5327d6b3c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 924,
+          "duration": 845,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
