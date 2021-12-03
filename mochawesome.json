@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-03T00:29:27.176Z",
-    "end": "2021-12-03T00:29:35.276Z",
-    "duration": 8100,
+    "start": "2021-12-03T00:34:22.202Z",
+    "end": "2021-12-03T00:34:30.785Z",
+    "duration": 8583,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8a908e8b-409b-4202-b7ee-8f070902b751",
+      "uuid": "553887f0-5df9-487c-abf0-37c6819d876b",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "df4252ac-2564-4442-befb-ac8ac87b2af7",
+          "uuid": "3b00cf94-602b-4d5f-bf6d-09b11de9d4c0",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado",
               "fullTitle": "Cadastro Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado",
               "timedOut": null,
-              "duration": 6100,
+              "duration": 6196,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://form-agilizei.netlify.app/');\ncy.get('input[name=firstName').type(chance.first());\ncy.get('input[name=lastName').type(chance.last());\ncy.get('textarea[name=adress]').type(chance.address());\ncy.get('input[name=emailAdress]').type(chance.email());\ncy.get('input[value=n]').check();\ncy.get('input[type=checkbox]').check('Netflix');\ncy.get('input[type=checkbox]').check('Livros');\ncy.get('select#countries').select('Dinamarca', {\n  force: true\n}).should('have.value', 'Dinamarca');\ncy.get('select#years').select('2006', {\n  force: true\n}).should('have.value', '2006');\ncy.get('select#months ').select('Janeiro', {\n  force: true\n}).should('have.value', 'Janeiro');\ncy.get('select#days').select('10', {\n  force: true\n}).should('have.value', '10');\ncy.get('input#firstpassword').type('Aluno@21');\ncy.get('input#secondpassword').type('Aluno@21');\ncy.get('button#submitbtn').click(); //cy.url('https://form-agilizei.netlify.app/listagem.html')\n//.should('contain','listagem')",
               "err": {},
-              "uuid": "d95afff3-f48b-4ba6-a3f4-62119067653b",
-              "parentUUID": "df4252ac-2564-4442-befb-ac8ac87b2af7",
+              "uuid": "65d81ae2-2263-4181-87e8-2c10175fee8c",
+              "parentUUID": "3b00cf94-602b-4d5f-bf6d-09b11de9d4c0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d95afff3-f48b-4ba6-a3f4-62119067653b"
+            "65d81ae2-2263-4181-87e8-2c10175fee8c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6100,
+          "duration": 6196,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
